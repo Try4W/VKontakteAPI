@@ -5,7 +5,7 @@
 
 ## Использование
 
-# С авторизацией через access_token:
+*С авторизацией через access_token:*
 ```
     public static void main(String[] args) throws IOException {
         VkAuth vkAuth = new VkAuth(123456789/*ID вашего приложения*/, "messages"); // VkAuth помогает авторизовать пользователя
@@ -31,7 +31,7 @@
     }
 ```
 
-# Без авторизации:
+*Без авторизации:*
 ```
     private void test() throws IOException {
         VkMethod getWallMethod = new VkMethod("wall.get"); // Собираем метод
