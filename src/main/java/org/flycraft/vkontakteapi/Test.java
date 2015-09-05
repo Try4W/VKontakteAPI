@@ -48,6 +48,8 @@ public class Test {
         getWallMethod.addArgument("count", "1"); // 1 пост
 
         VKList<VKApiPost> vkApiPosts = new VKList<>(VkApi.invoke(getWallMethod, "5.37"), VKApiPost.class);
+        System.out.println("Size: " + vkApiPosts.size());
+        System.out.println("Count: " + vkApiPosts.getCount());
         System.out.println(vkApiPosts.get(0).text); // Выводим третий пост со стены Паши Дурова
     }
 
